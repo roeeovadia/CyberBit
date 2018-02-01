@@ -1,0 +1,26 @@
+<accordion>
+  <accordion-group *ngFor="let device of devices">
+
+    <div accordion-heading >
+      
+      <input type="checkbox" 
+      (click)="checkSection($event);"
+      > 
+
+      {{device?.name}}
+      <i class="pull-right glyphicon" [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+    </div>
+
+    <ul class="list-unstyled">
+      <li *ngFor="let item of device?.devices">
+        <label for="check-{{item?.id}}">
+          <input type="checkbox" id="check-{{item?.id}}" [checked]="item?.active === 1" (change)="itemChange(item?.id, item?.active)"
+          /> {{item.name}}
+        </label>
+
+      </li>
+    </ul>
+  </accordion-group>
+
+
+</accordion>
