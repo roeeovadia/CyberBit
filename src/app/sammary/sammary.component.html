@@ -1,16 +1,28 @@
 <div class="row">
-  
-{{s}}
+
+  <!-- {{sammary |json}} -->
 </div>
 
 <div class="row">
+  <div class="col-md-12">
+    <ul>
+      <li *ngFor="let item of sammary?.devices">
+        {{item.name}}
+      </li>
+    </ul>
+    <ul>
+      <li *ngFor="let item of sammary?.protocols">
+        {{item.name}}
+      </li>
+    </ul>
+  </div>
   <div class="col-md-6">
     <button class="btn btn-link" click="clear()">
       clear
     </button>
   </div>
   <div class="col-md-6">
-    <button class="btn btn-primary" click="sendRequst()">
+    <button class="btn btn-primary" (click)="sendRequst()">
       Start Learning
     </button>
   </div>

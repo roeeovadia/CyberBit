@@ -14,7 +14,9 @@
     <ul class="list-unstyled">
       <li *ngFor="let item of device?.devices">
         <label for="check-{{item?.id}}">
-          <input type="checkbox" id="check-{{item?.id}}" [checked]="item?.active === 1" (change)="itemChange(item?.id, item?.active)"
+          <input type="checkbox" 
+          id="check-{{item?.id}}" [checked]="item?.active === 1"
+           (change)="itemChange(item?.id, item?.active)"
           /> {{item.name}}
         </label>
 
