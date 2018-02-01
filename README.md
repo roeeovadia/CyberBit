@@ -4,12 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installations:
 
-node + npm
-angular cli
-typescript
-clone the project
-npm install 
-ng serve
+* node + npm
+* angular cli
+* typescript
+* clone the project
+* npm install 
+* ng serve
 
 
 
@@ -31,7 +31,6 @@ no e2e tests
 
 ## Further help
 
-Roee Ovadia
-roee@go-sites.co.il
-[roee@go-sites.co.il](mailto:roee@go-sites.co.il)
-[go-sites](http://www.go-sites.co.il)
+* Roee Ovadia
+* roee@go-sites.co.il
+* [go-sites](http://www.go-sites.co.il)
